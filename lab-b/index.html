@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - IS LAB B</title>
+    <title>Bartosz Michalski (55573) - IS LAB B</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
+<main class="todo-container">
+    <header>
+        <h1>LISTA TODO</h1>
+    </header>
+    <section class="search-section">
+        <input
+            type="search"
+            id="todo-search"
+            placeholder="Szukaj zadań..."
+            aria-label="Wyszukiwarka zadań"
+        >
+    </section>
 
+    <ul id="todo-list" class="todo-list"></ul>
+    <form id="todo-form" class="todo-form">
+        <input
+            type="text"
+            id="task-input"
+            placeholder="do zrobienia..."
+            required
+            minlength="3"
+            maxlength="255"
+        >
+        <input
+            type="date"
+            id="date-input"
+        >
+        <button type="submit" id="btn-add">Zapisz</button>
+    </form>
+</main>
 </body>
 </html>
