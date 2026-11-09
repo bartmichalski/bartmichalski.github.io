@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Post Details{% endblock %}
+
+{% block body %}
+    <h1 class="mb-4">Post Details</h1>
+
+    <div class="card shadow-sm mb-4 border-0">
+        <table class="table table-bordered mb-0">
+            <tbody>
+            <tr>
+                <th class="w-25 bg-light">Id</th>
+                <td>{{ post.id }}</td>
+            </tr>
+            <tr>
+                <th class="w-25 bg-light">Subject</th>
+                <td>{{ post.subject }}</td>
+            </tr>
+            <tr>
+                <th class="w-25 bg-light">Description</th>
+                <td>{{ post.description }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="d-flex gap-2 align-items-center">
+        <a href="{{ path('app_post_index') }}" class="btn btn-secondary">back to list</a>
+        <a href="{{ path('app_post_edit', {'id': post.id}) }}" class="btn btn-warning">edit</a>
+        {{ include('post/_delete_form.html.twig') }}
+    </div>
+{% endblock %}

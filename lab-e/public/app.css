@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(75 105 75 / 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.table-custom-hover tbody tr:hover td {
+    background-color: rgb(75 105 75 / 0.5) !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(0,0,0,0.08) !important;
+}
+
+.table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+footer {
+    font-size: 0.9rem;
+    border-top: 1px solid #dee2e6;
+    margin-top: 40px;
+}
+
